@@ -1,0 +1,13 @@
+-creamos un package.json con un objeto vacio {}
+-ejecutamos npm install --save-dev @babel/core @babel/cli @babel/preset-env
+-agregamos 
+    "scripts": {
+        "build":"babel src -d output"    
+    }
+    dentro de nuestro package.json
+-creamos el archivo "babel.config.json"
+-le agregamos 
+    {
+        "presets": ["@babel/preset-env"]
+    }
+- listo ejecutamos nuestro codigo con "npm run build"
